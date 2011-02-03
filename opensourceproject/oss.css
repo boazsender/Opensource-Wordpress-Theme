@@ -1,0 +1,247 @@
+@font-face {
+	font-family: 'UpperEastSideRegular';
+	src: url('fonts/ues/UpperEastSide-webfont.eot');
+	src: local('☺'), url('fonts/ues/UpperEastSide-webfont.woff') format('woff'), url('fonts/ues/UpperEastSide-webfont.ttf') format('truetype'), url('fonts/ues/UpperEastSide-webfont.svg#webfontbvu33J1z') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+  background: url(images/texture.gif)
+}
+body {
+  margin: 0px;
+  background: -moz-radial-gradient(top, rgba(255, 255, 200, 1), rgba(255, 255, 200, .3));
+  background: -webkit-gradient(radial, 50% 50%, 30, 50% 50%, 800, from(rgba(255, 255, 230, 1)), to(rgba(255, 255, 255, 0)), color-stop(10%, rgba(255, 255, 230, 1)));
+}
+#wrapper{
+background: none;
+/*
+  background: rgba(180, 180, 180, .5);
+     -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+          border-radius: 9px;
+*/
+  position: relative;
+}
+#header{
+  padding: 0
+}
+#main {
+  padding: 20px 0 0 0
+}
+#access, #access .menu-header{
+  position: absolute;
+  width: 400px;
+  top: 32px;
+  right: 0px;
+}
+#site-title {
+  font-size: 125px;
+  margin-bottom: 0px; 
+  padding: 0px 0 0 140px;
+  height:140px;
+  line-height: 1;
+  background: url('http://code.bocoup.com/butter/layout/img/popcorn.png') no-repeat;
+  font-family: 'UpperEastSideRegular';
+}
+#site-title a {
+  color: #3f3f3f;
+  text-shadow: 1px 1px 1px #eee;
+}
+#site-description {
+  top: 90px;
+  left: 285px;
+  position: absolute;
+}
+
+/*
+
+#branding {
+  background: #eee url(images/popcornlogo.png) no-repeat;
+  width: 410px;
+  height: 277px;
+  border: 1px solid #999;
+  position: relative;
+}
+#site-title {
+  display: none;
+  font-size: 125px;
+  margin-bottom: 0px; 
+  padding: 0px 0 0 140px;
+  height:140px;
+  line-height: 1;
+  background: url('http://code.bocoup.com/butter/layout/img/popcorn.png') no-repeat;
+  font-family: 'UpperEastSideRegular';
+}
+#site-title a {
+  color: #3f3f3f;
+  text-shadow: 1px 1px 1px #eee;
+}
+#site-description {
+  display: none;
+  top: 90px;
+  left: 285px;
+  position: absolute;
+}
+
+*/
+#container.wide, .wide #content{
+  margin: 0px 0px 40px 0px;
+}
+#video {
+  width: 640px;
+	-webkit-box-shadow: rgba(0,0,0, .5) 0 0 5px;	
+	   -moz-box-shadow: rgba(0,0,0, .5) 0 0 5px;	
+	     -o-box-shadow: rgba(0,0,0, .5) 0 0 5px;	
+	        box-shadow: rgba(0,0,0, .5) 0 0 5px;	
+}
+h1 .small {
+  font-size: 0.3em; color:#000; font-weight:normal;display:block
+}
+h2 {
+  font-size: 2em; color: #222; margin: 40px 0 0 0; clear: both; border-bottom: 1px solid #999
+}
+h3 {
+  margin: 40px 0 0 0; font-weight: bold; font-size: 1.5em
+}
+h4{
+  margin: 10px 0 4px 0;
+}
+a {
+ color: #336699; text-decoration: none
+}
+a img{
+  border: none
+}
+hr {
+  border: 0; width: 80%; border-bottom: 1px solid #aaa
+}
+footer {
+  text-align:center; padding-top:30px; font-style: italic; margin-bottom:50px 
+}
+footer a {
+  margin: 0 20px;
+}
+pre {
+  font-size: 12px;  padding: 15px;
+}
+nav ul li a{ 
+  padding:2px 10px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #
+}
+.last{
+  clear:right
+}
+.half, .quarter, .third, .fifth, .sixth{
+  float: left
+}
+.half{
+  width: 45%;
+  margin-right: 5%;
+}
+.last.half{
+  margin-right: 0;
+  width: 49%;
+  float: right;
+}
+#thecode{
+	display:block;
+	color: #000;
+}
+#runDemo{
+	margin: 0 0 0 40px;
+	font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.demo{
+  border: 1px solid #c2c2c2;
+	display: block;
+	padding: 10px;
+	margin: 20px 0px;
+	color:#999;
+	overflow-x: scroll;
+}
+.box{
+  width: 170px;
+  padding: 10px;
+  margin: 20px;
+  float: left;
+  background-image : -moz-radial-gradient(top, #fff, #ddd);
+  background-image : -webkit-gradient(radial, 130 70, 30, 110 110, 400, from(#fff), to(#ddd), color-stop(10%, #fff));
+     -moz-border-radius: 4px; /* FF1+ */
+  -webkit-border-radius: 4px; /* Saf3-4 */
+          border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome */
+  border: 1px solid #aaa;
+  text-shadow: 1px 1px 1px #eee;
+}
+.attachment-thumbnail{
+  border: 1px solid #ccc;
+}
+#menu-footer-menu{
+  display: block; clear: both; margin: 0px 0px 10px 0px
+}
+#menu-footer-menu li { margin-right: 10px; list-style-type: none; display: inline}
+.center{
+  display: block;
+  text-align: center
+}
+input[type=text] {
+  border: 1px solid #aaa;
+     -moz-border-radius: 12px; /* FF1+ */
+  -webkit-border-radius: 12px; /* Saf3-4 */
+          border-radius: 12px; /* Opera 10.5, IE9, Saf5, Chrome */ 
+}
+
+
+
+/* button */
+#access {
+  background: none;
+}
+#menu-main-menu li {
+  margin-right: 10px
+}
+input[type=submit], #menu-main-menu li {
+	font-size: 12px;
+	color: #bbb;
+	text-shadow: hsla(0,0%,100%,.5) 1px 1px 0;	
+	border-radius: 1em;
+	border: none;
+	padding: .2em .5em;
+	cursor: pointer;
+	background: -webkit-gradient(radial, center top, 200, center top, 30, from(hsla(0,0%,70%,0)), to(hsla(0,0%,100%,.5)));	
+  background: -moz-radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.5) 50%, hsla(0,0%,90%,0) 100%);	
+ 	background: -o-radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.5) 50%, hsla(0,0%,90%,0) 100%);	
+  background: radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.5) 50%, hsla(0,0%,90%,0) 100%);	
+	-webkit-box-shadow: inset rgba(0,0,0,0.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.1) 0 2px 1px;	
+	   -moz-box-shadow: inset rgba(0,0,0,0.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.1) 0 2px 1px;	
+	     -o-box-shadow: inset rgba(0,0,0,0.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.1) 0 2px 1px;	
+	        box-shadow: inset rgba(0,0,0,0.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.1) 0 2px 1px;	
+}
+
+input[type=submit]:hover, #menu-main-menu li:hover {
+	background: -webkit-gradient(radial, center top, 200, center top, 30, from(hsla(0,0%,70%,0)), to(hsla(0,0%,100%,.7)));
+	background: -moz-radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.7) 50%, hsla(0,0%,90%,0) 100%);	
+	background:   -o-radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.7) 50%, hsla(0,0%,90%,0) 100%);	
+	background:  	 radial-gradient(50% 0% 180deg, circle cover, hsla(0,0%,100%,.7) 50%, hsla(0,0%,90%,0) 100%);	
+}
+input[type=submit]:active, #menu-main-menu li.current-menu-item {
+	-webkit-transform: translateY(1px) scale(.98);
+     -moz-transform: translateY(1px) scale(.98);
+       -o-transform: translateY(1px) scale(.98);
+          transform: translateY(1px) scale(.98);
+  -webkit-box-shadow: inset rgba(0,0,0,.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.05) 0 2px 2px;	
+     -moz-box-shadow: inset rgba(0,0,0,.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.05) 0 2px 2px;	
+       -o-box-shadow: inset rgba(0,0,0,.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.05) 0 2px 2px;	
+          box-shadow: inset rgba(0,0,0,.05) 0 -4px 5px, inset rgba(252,255,255,0.4) 0 4px 3px, rgba(0,0,0,0.05) 0 2px 2px;	
+}
+#menu-main-menu li.current-menu-item a{
+  color: #777;
+}
+.widget-area li {
+  margin-bottom: 30px
+}
