@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-    <div id="container">
+    <div id="container" class="wide">
       <div id="content" role="main">
 
 
@@ -25,7 +25,8 @@ get_header(); ?>
         <div id="post-<?php the_ID(); ?>" <?php post_class('box'); ?>>
           <h1 class="entry-title"><?php the_title(); ?></h1>
           <div class="entry-content">
-            <?php the_content(); ?>
+            <p><?php the_excerpt (); ?></p>
+            <a href="">Get Code &darr;</a> 
             <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
             <?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
           </div><!-- .entry-content -->

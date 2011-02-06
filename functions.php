@@ -239,7 +239,7 @@ add_filter( 'excerpt_length', 'twentyten_excerpt_length' );
  * @return string "Continue Reading" link
  */
 function twentyten_continue_reading_link() {
-  return ' <a href="'. get_permalink() . '">' . __( 'View <span class="meta-nav">&rarr;</span>', 'twentyten' ) . '</a>';
+  return ' <a href="'. get_permalink() . '">' . __( '<br>View <span class="meta-nav">&rarr;</span>', 'twentyten' ) . '</a>';
 }
 
 /**
@@ -493,7 +493,7 @@ function create_method_post_type() {
   register_post_type( 'API',
     array(
         'labels' => array(
-        'name' => __( 'APIs' ),
+        'name' => __( 'API Docs' ),
         'singular_name' => __( 'API' )
       ),
     'supports' => array( 'title', 'editor', 'excerpt'),
@@ -530,3 +530,35 @@ function create_plugin_post_type() {
     )
   );
 };
+
+
+add_action( 'init', 'create_type_taxonomy' );
+function create_type_taxonomy() {
+  // create a new taxonomy
+  register_taxonomy(
+    'types',
+    'API',
+    array(
+      'label' => __('Types'),
+      'sort' => true,
+      'args' => array('orderby' => 'term_order'),
+      'rewrite' => array('slug' => 'type'),
+      'name' => _x( 'Types', 'taxonomy general name' ),
+      'singular_name' => _x( 'Type', 'taxonomy singular name' ),
+      'search_items' =>  __( 'Search Types' ),
+      'popular_items' => __( 'Popular Types' ),
+      'all_items' => __( 'All Types' ),
+      'parent_item' => __( 'Parent Type' ),
+      'parent_item_colon' =>  __( 'Parent Type:' ),
+      'hierarchical' => true,
+      'edit_item' => __( 'Edit Type' ), 
+      'update_item' => __( 'Update Type' ),
+      'add_new_item' => __( 'Add New Type' ),
+      'new_item_name' => __( 'New Type Name' ),
+      'separate_items_with_commas' => __( 'Separate Types with commas' ),
+      'add_or_remove_items' => __( 'Add or remove Types' ),
+      'choose_from_most_used' => __( 'Choose from the most used Types' ),
+      'menu_name' => __( 'Types' ),
+    )
+  );
+}

@@ -309,15 +309,12 @@ textarea {
   -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
   padding: 2px;
 }
-a:link {
+a {
   color: #0066cc;
-}
-a:visited {
-  color: #743399;
 }
 a:active,
 a:hover {
-  color: #ff4b33;
+  color: #777;
 }
 
 /* Text meant only for screen readers */
