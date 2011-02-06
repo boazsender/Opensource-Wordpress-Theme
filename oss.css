@@ -214,7 +214,7 @@ h2 {
   font-size: 2em; color: #222; margin: 40px 0 0 0; clear: both;
 }
 h3 {
-  margin: 40px 0 0 0; font-weight: bold; font-size: 1.5em
+  margin: 40px 0 0 0; font-weight: bold; font-size: 1.5em;font-weight: normal;
 }
 h4{
   margin: 10px 0 4px 0;
