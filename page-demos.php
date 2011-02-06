@@ -14,29 +14,29 @@
 
 get_header(); ?>
 
-		<div id="container" class="wide">
-			<div id="content" role="main">
+    <div id="container" class="wide">
+      <div id="content" role="main">
 
 
 <?php $loop = new WP_Query( array( 'post_type' => 'demo', 'posts_per_page' => 99999 ) ); ?>
 
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-				<div id="post-<?php the_ID(); ?>" <?php post_class('box'); ?>>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
-					<div class="entry-content">
-  					<span class="thumb"><?php the_post_thumbnail( 'thumbnail' ); ?></span>
-						<?php the_excerpt(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
-					</div><!-- .entry-content -->
-				</div><!-- #post-## -->
+        <div id="post-<?php the_ID(); ?>" <?php post_class('box'); ?>>
+          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <div class="entry-content">
+            <span class="thumb"><?php the_post_thumbnail( 'thumbnail' ); ?></span>
+            <?php the_excerpt(); ?>
+            <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
+            <?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
+          </div><!-- .entry-content -->
+        </div><!-- #post-## -->
 
-				<?php #comments_template( '', true ); ?>
+        <?php #comments_template( '', true ); ?>
 
 <?php endwhile; ?>
 
-			</div><!-- #content -->
-		</div><!-- #container -->
+      </div><!-- #content -->
+    </div><!-- #container -->
 
 <?php get_footer(); ?>
