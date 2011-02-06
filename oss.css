@@ -11,8 +11,11 @@ html {
 }
 body {
   margin: 0px;
+  background:none;
+/*
   background: -moz-radial-gradient(top, rgba(255, 255, 200, 1), rgba(255, 255, 200, .3));
   background: -webkit-gradient(radial, 50% 50%, 30, 50% 50%, 800, from(rgba(255, 255, 230, 1)), to(rgba(255, 255, 255, 0)), color-stop(10%, rgba(255, 255, 230, 1)));
+*/
 }
 #wrapper{
 background: none;
@@ -191,6 +194,8 @@ nav ul li a{
 }
 input[type=text] {
   border: 1px solid #aaa;
+  outline: none;
+  padding: 5px 10px;
      -moz-border-radius: 12px; /* FF1+ */
   -webkit-border-radius: 12px; /* Saf3-4 */
           border-radius: 12px; /* Opera 10.5, IE9, Saf5, Chrome */ 
