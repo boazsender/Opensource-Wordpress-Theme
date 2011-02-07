@@ -395,3 +395,6 @@ input[type=submit]:active, #menu-main-menu li.current-menu-item {
 .widget-area li {
   margin-bottom: 30px
 }
+
+#content .sponsors img {float: left; width: 90px; padding: 0 10px 0 0}
+.sponsors li {height: 120px;}
