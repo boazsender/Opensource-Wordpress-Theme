@@ -43,9 +43,6 @@
        <a href="http://bocoup.com" title="The JavaScrpt Company">
          <img height="50px" src="<?php echo bloginfo( 'template_directory' ) ?>/img/bocoup.png" alt="The JavaScript Company"/>
        </a>
-        <a href="http://mediatemple.net">
-         <img height="40px" src="<?php echo bloginfo( 'template_directory' ) ?>/img/mt.png"/>
-       </a>
       </footer>
 
     <a class="center" href="http://www.w3.org/html/logo/">
