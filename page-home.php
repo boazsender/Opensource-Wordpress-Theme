@@ -51,7 +51,7 @@ get_header(); ?>
           </div><!-- .entry-content -->
         </div><!-- #post-## -->
 
-        <?php $loop = new WP_Query( array( 'post_type' => 'demo', 'posts_per_page' => 99999 ) ); ?>
+        <?php $loop = new WP_Query( array('posts_per_page' => 99999 ) ); ?>
 
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 

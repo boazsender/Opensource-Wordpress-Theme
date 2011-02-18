@@ -65,7 +65,23 @@ hr.space {
 #access, #access .menu-header{
   margin: 0 auto;
 }
-#site-title {
+.page-template #site-title {
+  margin-bottom: 0px; 
+  height:92px;
+  width: 100px;
+  line-height: 1;
+  text-indent: -9999em;
+  background: url('img/wwm-button.png') no-repeat center;  
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  
+}
+.page-template #site-description {
+  display: none;
+}
+.home #site-title {
+  position: relative;
   font-size: 95px;
   margin-bottom: 0px; 
   height:220px;
@@ -73,6 +89,9 @@ hr.space {
   line-height: 1;
   text-indent: -9999em;
   background: url('img/webmademovies-org.png') no-repeat center;  
+}
+.description #site-description {
+  display: block;  
 }
 
 .brands {

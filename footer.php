@@ -48,14 +48,13 @@
             <img src="http://www.w3.org/html/logo/downloads/HTML5_Badge_64.png" height="48" alt="HTML5 Powered with CSS3 / Styling, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage" title="HTML5 Powered with CSS3 / Styling, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage">
           </a>
           <a href="http://mozilla.com" title="The Mozilla Foundation">
-            <img height="50px"src="<?php echo bloginfo( 'template_directory' ) ?>/img/mozilla-ff.png"> 
+            <img height="50px"src="<?php echo bloginfo( 'template_directory' ) ?>/img/mozilla.png"> 
           </a>
         </footer>
       </div>
 
     </div><!-- #colophon -->
   </div><!-- #footer -->
-  <a href="https://github.com/webmademovies/popcorn-js"><img style="position: absolute; top: 0; left: 0; border: 0;" src="<?php echo bloginfo( 'template_directory' ) ?>/img/github-left.png" alt="Fork me on GitHub"></a>
 <?php
   /* Always have wp_footer() just before the closing </body>
    * tag of your theme, or you will break many plugins, which
