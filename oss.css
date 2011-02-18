@@ -401,6 +401,9 @@ input[type=text] {
 #access {
   background: none;
 }
+#access a {
+  color: #fff;
+}
 #access .menu-header, div.menu {
   width: 500px;
 }
