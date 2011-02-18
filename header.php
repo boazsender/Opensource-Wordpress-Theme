@@ -10,7 +10,7 @@
  */
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>  class="hfeed <?php bloginfo( 'name' ) ?>">
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <title><?php
@@ -56,7 +56,7 @@
   </script>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class( ); ?> >
 <div id="wrapper" class="hfeed">
   <div id="header">
     <div id="access" role="navigation">

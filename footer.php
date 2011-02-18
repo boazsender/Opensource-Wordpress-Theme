@@ -22,15 +22,23 @@
    */
   get_sidebar( 'footer' );
 ?>
-      <div class="half">
-        <a  href="http://butterapp.com" class="brands butterbrand">
+      <div class="third">
+        <a  href="http://popcornjs.org" class="brands popcornjsbrand">
+          Popcorn.js
+        </a>
+        <div class="center">
+          The HTML5 Video Framework
+        </div>
+      </div>
+      <div class="quarter">
+        <a  href="http://butterapp.org" class="brands butterbrand">
           Butter App
         </a>
         <div class="center">
-          Try Butter, the authoring tool for Popcorn.js
+          The authoring tool for Popcorn.js
         </div>
       </div>
-      <div class="half">
+      <div class="third last pushtoright">
         <?php wp_nav_menu( array( 'container_class' => 'menu-footer', 'theme_location' => 'secondary' ) ); ?>
         <p>
           Popcorn.js is a <a href="http://mozilla.com">Mozilla</a> funded project. This website is hosted by Media Temple.
@@ -48,7 +56,6 @@
     </div><!-- #colophon -->
   </div><!-- #footer -->
   <a href="https://github.com/webmademovies/popcorn-js"><img style="position: absolute; top: 0; left: 0; border: 0;" src="<?php echo bloginfo( 'template_directory' ) ?>/img/github-left.png" alt="Fork me on GitHub"></a>
-  <a href="http://webmademovies.org"><img style="position: absolute; top: 20px; right: 0; border: 0;" src="<?php echo bloginfo( 'template_directory' ) ?>/img/wwm-ticket.png" alt="A Web Made Movies Project"></a>
 <?php
   /* Always have wp_footer() just before the closing </body>
    * tag of your theme, or you will break many plugins, which

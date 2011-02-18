@@ -15,7 +15,12 @@
 }
 
 html {
-  background-color: #D1D3D4;
+  background-color: #BE1E2D;
+  background-image: -moz-linear-gradient(top, #BE1E2D, #EF4136); /* FF3.6 */
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #BE1E2D),color-stop(1, #EF4136)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#BE1E2D, #EF4136); /* Chrome 10+, Saf6 */
+  background-image: linear-gradient(top, #BE1E2D, #EF4136);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#BE1E2D', EndColorStr='#EF4136'); /* IE6–IE9 */
 }
 body {
   border-top: 3px solid #333;
@@ -66,10 +71,10 @@ hr.space {
   height:220px;
   width: 100%;
   line-height: 1;
-  background: url('img/popcornjs.png') no-repeat center;
   text-indent: -9999em;
-
+  background: url('img/webmademovies-org.png') no-repeat center;  
 }
+
 .brands {
   display: block;
   margin-bottom: 0px; 
@@ -80,9 +85,8 @@ hr.space {
   height:83px;
 }
 
-
-.pocornjsbrand {
-  background: url('img/popcornjs.png') no-repeat center;
+.popcornjsbrand {
+  background: url('img/popcornjs-footer.png') no-repeat center;
 }
 .butterbrand {
   background: url('img/butterapp-footer.png') no-repeat center;
@@ -90,6 +94,7 @@ hr.space {
 
 #site-description {
   width: 100%;
+  color: #fff;
   text-align: center;
 }
 #sidebar {  
@@ -258,6 +263,9 @@ nav ul li a{
 .last.half{
   width: 49%;
 }
+.third {
+  width: 32%;
+}
 .quarter {
   width: 20%;
   margin-right: 5%;
@@ -282,7 +290,9 @@ nav ul li a{
 .last.half, .last.quarter, .last.twoquarter, .last.threequarter{
   margin-right: 0;
 }
-
+.pushtoright {
+  float: right;
+}
 #content .box h3 {
   font-family: sans-serif;
   font-weight: normal;
@@ -315,7 +325,7 @@ input[type=text] {
 }
 
 .panel {
-  background: #aaa;
+  background: #BE1E2D;
   height: 350px;
 }
 
@@ -402,7 +412,10 @@ input[type=text] {
 #menu-main-menu li.current-menu-item a, #menu-main-menu li a:hover{
   color: #fff;
   background: #333;
-  -webkit-box-shadow: 0px 0px 3px #888;
+  -webkit-box-shadow: 0px 2px 2px #811;
+  -moz-box-shadow: 0px 2px 2px #811;
+  -o-box-shadow: 0px 2px 2px #811;
+  box-shadow: 0px 2px 2px #811;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-bottomright: 5px;
