@@ -63,7 +63,8 @@ hr.space {
 #site-title {
   font-size: 95px;
   margin-bottom: 0px; 
-  height:220px;
+  height: 180px;
+  margin-top: 30px;
   width: 100%;
   line-height: 1;
   background: url('img/popcornjs.png') no-repeat center;
