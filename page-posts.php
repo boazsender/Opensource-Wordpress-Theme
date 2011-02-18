@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-    <div id="container" class="wide">
+    <div id="container" class="">
       <div id="content" role="main">
 
         <h1 class="large fancy">
@@ -42,4 +42,5 @@ get_header(); ?>
       </div><!-- #content -->
     </div><!-- #container -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

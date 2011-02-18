@@ -27,9 +27,9 @@ body {
   margin: 0px;
   background:none;
 }
-.large {
+.fancy {
   font-family: raleway;
-  font-size: 60px;
+  font-size: 50px;
   color: #911 !important;
   margin: 30px 0 !important;
   
@@ -483,4 +483,7 @@ input[type=text] {
 body, #content, #content input, #content textarea {
   color: #000;
   text-shadow: 0 0 1px #911;
+}
+#primary {
+  margin-top: 50px;
 }
