@@ -429,3 +429,12 @@ input[type=text] {
 
 #content .sponsors img {float: left; width: 58px; padding: 0 10px 0 0}
 .sponsors li {height: 120px;}f
+
+.entry-meta a, .entry-utility a {
+  color: #fff;
+}
+
+body, #content, #content input, #content textarea {
+  color: #000;
+  text-shadow: 0 0 1px #911;
+}
