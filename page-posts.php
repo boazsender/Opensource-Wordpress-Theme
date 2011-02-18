@@ -17,7 +17,9 @@ get_header(); ?>
     <div id="container" class="wide">
       <div id="content" role="main">
 
-
+        <h1 class="large fancy">
+          Web Made Movies Blog
+        </h1>
 <?php $loop = new WP_Query( array( 'posts_per_page' => 99999 ) ); ?>
 
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>

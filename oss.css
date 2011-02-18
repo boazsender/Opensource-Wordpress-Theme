@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'raleway';
   src: url('fonts/raleway/raleway_thin.eot');
-  src: local('☺'), url('fonts/raleway/raleway_thin.otf') format('otf'), url('fonts/raleway/UpperEastSide-webfont.ttf') format('truetype'), url('fonts/ues/UpperEastSide-webfont.svg#webfontbvu33J1z') format('svg');
+  src: local('☺'), url('fonts/raleway/raleway_thin.otf') format('otf'), url('fonts/raleway/raleway_thin.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,7 +27,13 @@ body {
   margin: 0px;
   background:none;
 }
-
+.large {
+  font-family: raleway;
+  font-size: 60px;
+  color: #911 !important;
+  margin: 30px 0 !important;
+  
+}
 hr.space {
   visibility: hidden;
 }
@@ -240,6 +246,9 @@ h4{
 a {
  color: #411; 
  text-decoration: none
+}
+a:hover {
+  color: #911;
 }
 a img{
   border: none
