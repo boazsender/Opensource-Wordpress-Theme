@@ -85,6 +85,11 @@ hr.space {
   height:83px;
 }
 
+#footer a, #footer, pre {
+  color: #fff;
+  text-shadow: none;
+}
+
 .popcornjsbrand {
   background: url('img/popcornjs-footer.png') no-repeat center;
 }
