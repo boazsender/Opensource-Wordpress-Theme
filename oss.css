@@ -402,7 +402,10 @@ input[type=text] {
 #menu-main-menu li.current-menu-item a, #menu-main-menu li a:hover{
   color: #fff;
   background: #333;
-  -webkit-box-shadow: 0px 0px 3px #888;
+  -webkit-box-shadow: 0px 2px 2px #888;
+  -moz-box-shadow: 0px 2px 2px #888;
+  -o-box-shadow: 0px 2px 2px #888;
+  box-shadow: 0px 2px 2px #811;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-bottomright: 5px;
