@@ -395,7 +395,13 @@ input[type=text] {
   padding: 0px;
   float: right;
 }
-
+#twitter-container {
+  height: 205px;
+  overflow: hidden;
+}
+.twtr-tweets {
+  margin-left: 50px;
+}
 .sidepanel {
   margin: 15px;
   height: 240px;
