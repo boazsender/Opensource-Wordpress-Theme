@@ -486,4 +486,5 @@ body, #content, #content input, #content textarea {
 }
 #primary {
   margin-top: 50px;
+  width: 230px
 }
