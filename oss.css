@@ -71,7 +71,7 @@ hr.space {
 #access, #access .menu-header{
   margin: 0 auto;
 }
-.page-template #site-title {
+#site-title {
   margin-bottom: 0px; 
   height:92px;
   width: 100px;
@@ -80,10 +80,10 @@ hr.space {
   background: url('img/wwm-button.png') no-repeat center;  
   position: absolute;
   top: 0px;
-  right: 10px;
+  right: -10px;
   
 }
-.page-template #site-description {
+#site-description {
   display: none;
 }
 .home #site-title {
