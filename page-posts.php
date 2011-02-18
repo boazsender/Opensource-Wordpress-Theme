@@ -22,7 +22,7 @@ get_header(); ?>
 
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-        <div id="post-<?php the_ID(); ?>" <?php post_class('box'); ?>>
+        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <h1 class="entry-title"><?php the_title(); ?></h1>
           <div class="entry-content">
             <span class="thumb"><?php the_post_thumbnail( 'thumbnail' ); ?></span>
