@@ -250,6 +250,9 @@ a {
 a:hover {
   color: #911;
 }
+.entry-title a:hover {
+  color: #000;
+}
 a img{
   border: none
 }

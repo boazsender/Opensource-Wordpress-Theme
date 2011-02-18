@@ -23,11 +23,12 @@ get_header(); ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class('box'); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <h1 class="entry-title"><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h1>
           <div class="entry-content">
             <span class="thumb"><?php the_post_thumbnail( 'thumbnail' ); ?></span>
             <?php the_excerpt(); ?>
             <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
+            <a href="<?php echo get_permalink() ?>">View &rarr;</a>
             <?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
           </div><!-- .entry-content -->
         </div><!-- #post-## -->
