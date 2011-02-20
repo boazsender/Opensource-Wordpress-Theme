@@ -32,7 +32,7 @@
       </div>
       <div class="half">
         <p>
-          Web Made Movies is a <a href="http://mozilla.com">Mozilla</a> funded project. This website is hosted by Media Temple.
+          Popcorn.js is a <a href="http://mozilla.com">Mozilla</a> funded project. This website is hosted by Media Temple.
         </p>
         <footer>
           <a href="http://www.w3.org/html/logo/">
