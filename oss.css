@@ -91,6 +91,8 @@ hr.space {
 .home #site-description {
   display: block;
   margin: 6px 0 3px 0;
+  left: 10px;
+  position: relative;
 }
 .home #site-title {
   position: relative;
