@@ -91,6 +91,7 @@ hr.space {
 .home #site-title {
   position: relative;
   font-size: 95px;
+  margin-top: 10px;
   margin-bottom: 0px; 
   height:150px;
   width: 100%;
@@ -454,7 +455,7 @@ input[type=text] {
   color: #fff;
 }
 #access .menu-header, div.menu {
-  width: 420px;
+  width: 325px;
 }
 
 #menu-main-menu li {
