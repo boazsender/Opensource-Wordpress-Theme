@@ -84,17 +84,17 @@ hr.space {
   
 }
 #site-description {
-  display: none;
+  margin: 6px 0 3px 0;
 }
 .home #site-title {
   position: relative;
   font-size: 95px;
   margin-bottom: 0px; 
-  height:220px;
+  height:150px;
   width: 100%;
   line-height: 1;
   text-indent: -9999em;
-  background: url('img/webmademovies-org.png') no-repeat center;  
+  background: url('img/webmademovies-org.png') no-repeat center center;  
 }
 .description #site-description {
   display: block;  

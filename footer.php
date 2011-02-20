@@ -39,7 +39,6 @@
         </div>
       </div>
       <div class="third last pushtoright">
-        <hr class="space"/>
         <p>
           Web Made Movies is a <a href="http://mozilla.com">Mozilla</a> funded project. This website is hosted by Media Temple.
         </p>
