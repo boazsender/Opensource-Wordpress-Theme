@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="third last pushtoright">
-        <?php wp_nav_menu( array( 'container_class' => 'menu-footer', 'theme_location' => 'secondary' ) ); ?>
+        <hr class="space"/>
         <p>
           Web Made Movies is a <a href="http://mozilla.com">Mozilla</a> funded project. This website is hosted by Media Temple.
         </p>
