@@ -117,6 +117,10 @@ hr.space {
   text-shadow: none;
 }
 
+#footer a:hover {
+  color:#999
+}
+
 .popcornjsbrand {
   background: url('img/popcornjs-footer.png') no-repeat center;
 }
