@@ -38,7 +38,7 @@ get_header(); ?>
         <h1>APIs</h1>
         <ul class="subnav listless">
          <?php 
-          $types=  get_categories(array('taxonomy' => 'types', 'exclude' => '9,10')); 
+          $types=  get_categories(array('taxonomy' => 'types')); 
             echo '<li><a href="/documentation/">All APIs</a></li>';
           foreach ($types as $type) {
             $li = '<li class="'.$type->slug.'"><a href="JavaScript:;">';
