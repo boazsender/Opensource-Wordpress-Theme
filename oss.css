@@ -86,6 +86,10 @@ hr.space {
   
 }
 #site-description {
+  display:none;
+}
+.home #site-description {
+  display: block;
   margin: 6px 0 3px 0;
 }
 .home #site-title {
