@@ -27,9 +27,11 @@ body {
   margin: 0px;
   background:none;
 }
+h1.fancy {
+  font-size: 50px;
+}
 .fancy {
   font-family: raleway;
-  font-size: 50px;
   color: #911 !important;
   margin: 30px 0 !important;
   
