@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'raleway';
   src: url('fonts/raleway/raleway_thin.eot');
-  src: local('☺'), url('fonts/raleway/raleway_thin.otf') format('otf'), url('fonts/raleway/UpperEastSide-webfont.ttf') format('truetype'), url('fonts/ues/UpperEastSide-webfont.svg#webfontbvu33J1z') format('svg');
+  src: local('☺'), url('fonts/raleway/raleway_thin.otf') format('otf'), url('fonts/raleway/raleway_thin.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,7 +22,15 @@ body {
   margin: 0px;
   background:none;
 }
-
+h1.fancy {
+  font-size: 50px;
+}
+.fancy {
+  font-family: raleway;
+  color: #888 !important;
+  margin: 30px 0 0 0!important;
+  
+}
 hr.space {
   visibility: hidden;
 }

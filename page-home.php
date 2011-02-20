@@ -56,7 +56,7 @@ $(function () {
             </div>
           </div><!-- .entry-content -->
         </div><!-- #post-## -->
-
+        <h3 class="fancy">Other Demos</h3>
         <?php $loop = new WP_Query( array( 'post_type' => 'demo', 'posts_per_page' => 99999 ) ); ?>
 
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
