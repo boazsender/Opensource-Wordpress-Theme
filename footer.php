@@ -31,11 +31,13 @@
         </div>
       </div>
       <div class="half">
-        <hr class="space"/>
         <p>
           Web Made Movies is a <a href="http://mozilla.com">Mozilla</a> funded project. This website is hosted by Media Temple.
         </p>
         <footer>
+          <a href="http://www.w3.org/html/logo/">
+            <img src="http://www.w3.org/html/logo/downloads/HTML5_Badge_64.png" height="48" alt="HTML5 Powered with CSS3 / Styling, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage" title="HTML5 Powered with CSS3 / Styling, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage">
+          </a>
           <a href="http://mozilla.com" title="The Mozilla Foundation">
             <img height="50px"src="<?php echo bloginfo( 'template_directory' ) ?>/img/mozilla.png"> 
           </a>
