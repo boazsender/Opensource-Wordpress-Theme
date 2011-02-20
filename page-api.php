@@ -43,7 +43,7 @@ get_header(); ?>
           foreach ($types as $type) {
             $li = '<li class="'.$type->slug.'"><a href="JavaScript:;">';
             $li .= $type->cat_name;
-            $li .= 's <span class="fine fancy"> ('.$type->category_count.')</span>';
+            $li .= 's <span class="fine"> ('.$type->category_count.')</span>';
             $li .= '</a></li>';
             echo $li;
           }
