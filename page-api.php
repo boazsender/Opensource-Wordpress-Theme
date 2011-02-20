@@ -21,16 +21,22 @@ get_header(); ?>
           $(function(){
             var loadApis = function ( class ) {
               if (!!window.location.hash) {
-                $('.page-content').hide();
-                $('.listitems').children().show().not('.' + window.location.hash.replace('#', '')).hide();
+                $( '.page-content' ).hide();
+                $( '.listitems' )
+                  .children()
+                  .show()
+                  .not( '.' + window.location.hash.replace( '#', '' ))
+                  .hide();
               }
             }
-            $(window).hashchange( function(){
+            $( window ).hashchange( function(){
               loadApis();              
             })
+            
             loadApis();              
-            $('.subnav').delegate('li', 'click', function(){
-              window.location.hash = $(this).attr('class');
+            
+            $('.subnav').delegate( 'li', 'click', function(){
+              window.location.hash = $( this ).attr( 'class' );
               loadApis();
             })
           });
@@ -39,7 +45,7 @@ get_header(); ?>
         <ul class="subnav listless">
          <?php 
           $types=  get_categories(array('taxonomy' => 'types')); 
-            echo '<li><a href="/documentation/">All APIs</a></li>';
+          echo '<li><a href="/documentation">All APIs</a></li>';
           foreach ($types as $type) {
             $li = '<li class="'.$type->slug.'"><a href="JavaScript:;">';
             $li .= $type->cat_name;
@@ -56,7 +62,7 @@ get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-        <div id="post-<?php the_ID(); ?>" <?php post_class('page-content'); ?>>
+        <div id="post-<?php the_ID(); ?>" <?php post_class(' page-content'); ?>>
           <div class="entry-content">            
             <?php the_content(); ?>
             <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
