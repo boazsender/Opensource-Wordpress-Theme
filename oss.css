@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'raleway';
   src: url('fonts/raleway/raleway_thin.eot');
-  src: local('☺'), url('fonts/raleway/raleway_thin.otf') format('otf'), url('fonts/raleway/UpperEastSide-webfont.ttf') format('truetype'), url('fonts/ues/UpperEastSide-webfont.svg#webfontbvu33J1z') format('svg');
+  src: local('☺'), url('fonts/raleway/raleway_thin.otf') format('otf'), url('fonts/raleway/raleway_thin.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,7 +22,15 @@ body {
   margin: 0px;
   background:none;
 }
-
+h1.fancy {
+  font-size: 50px;
+}
+.fancy {
+  font-family: raleway;
+  color: #888 !important;
+  margin: 30px 0 0 0!important;
+  
+}
 hr.space {
   visibility: hidden;
 }
@@ -63,13 +71,12 @@ hr.space {
 #site-title {
   font-size: 95px;
   margin-bottom: 0px; 
-  height: 180px;
-  margin-top: 30px;
+  height: 140px;
+  margin-top: 10px;
   width: 100%;
   line-height: 1;
   background: url('img/popcornjs.png') no-repeat center;
   text-indent: -9999em;
-
 }
 .brands {
   display: block;
@@ -90,6 +97,7 @@ hr.space {
 }
 
 #site-description {
+  margin: 6px 0 3px 0;
   width: 100%;
   text-align: center;
 }
@@ -127,11 +135,41 @@ hr.space {
              0 5px 10px rgba(0,0,0,.25),
              0 10px 10px rgba(0,0,0,.2),
              0 20px 20px rgba(0,0,0,.15);
+}
+.listitems li.instance-properties .typeofodc{
+  background: url('img/ribbon-red.png') no-repeat center;
+}
+.listitems li.static-methods .typeofodc{
+  background: url('img/ribbon-blue.png') no-repeat center;
+}
+.listitems li.instance-methods .typeofodc{
+  background: url('img/ribbon-green.png') no-repeat center;
+}
+.listitems li.popcorn-js-method .typeofodc{
+  background: url('img/ribbon-green.png') no-repeat center;
+}
+.listitems li.native-pass-through-method .typeofodc{
+  background: url('img/ribbon-green.png') no-repeat center;
+}
 
+.listitems li .typeofodc{
+  width: 134px;
+  font-size: 12px;
+  color: #f4f4f4;
+  height: 34px;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 15px;
+  right: -12px;
 }
 .listitems a {
   color: #333;
 }
+.listitems .typeofodc a {
+  color: #fff;
+}
+
 .listitems p {
   margin: 0;
   padding: 0;
@@ -293,7 +331,7 @@ nav ul li a{
   line-height: 1;
 }
 .box{
-  width: 230px;
+  width: 175px;
   padding: 10px;
   margin: 20px;
   float: left;
@@ -373,9 +411,9 @@ input[type=text] {
 }
 .butter-plugin{
   border: 4px solid #666;
-  background-color: #FBF9EA;
+  background-color: #F4f4f4;
   margin: 0 0 10px 0;
-  height: 80px;
+  height: 300px;
   width: 325px;
   padding: 0px;
   float: right;
@@ -393,7 +431,7 @@ input[type=text] {
   background: none;
 }
 #access .menu-header, div.menu {
-  width: 500px;
+  width: 425px;
 }
 
 #menu-main-menu li {

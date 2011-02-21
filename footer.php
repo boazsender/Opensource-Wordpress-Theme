@@ -31,16 +31,15 @@
         </div>
       </div>
       <div class="half">
-        <?php wp_nav_menu( array( 'container_class' => 'menu-footer', 'theme_location' => 'secondary' ) ); ?>
         <p>
-          Popcorn.js is a <a href="http://mozilla.com">Mozilla</a> funded project. This website is hosted by Media Temple.
+          Popcorn.js is a <a href="http://mozilla.com">Mozilla</a> funded project. This website is hosted by Media Temple. See a full list of the project sponsors <a href="/sponsors">here</a>.
         </p>
         <footer>
           <a href="http://www.w3.org/html/logo/">
             <img src="http://www.w3.org/html/logo/downloads/HTML5_Badge_64.png" height="48" alt="HTML5 Powered with CSS3 / Styling, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage" title="HTML5 Powered with CSS3 / Styling, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage">
           </a>
           <a href="http://mozilla.com" title="The Mozilla Foundation">
-            <img height="50px"src="<?php echo bloginfo( 'template_directory' ) ?>/img/mozilla-ff.png"> 
+            <img height="50px"src="<?php echo bloginfo( 'template_directory' ) ?>/img/mozilla.png"> 
           </a>
         </footer>
       </div>
