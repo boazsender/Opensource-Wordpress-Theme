@@ -457,4 +457,8 @@ input[type=text] {
 }
 
 #content .sponsors img {float: left; width: 58px; padding: 0 10px 0 0}
-.sponsors li {height: 120px;}f
+.sponsors li {height: 120px;}
+
+#primary, #secondary {
+  width: 230px;
+}
