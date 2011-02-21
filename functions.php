@@ -239,7 +239,7 @@ add_filter( 'excerpt_length', 'twentyten_excerpt_length' );
  * @return string "Continue Reading" link
  */
 function twentyten_continue_reading_link() {
-  return ' <a href="'. get_permalink() . '">' . __( '<br>View <span class="meta-nav">&rarr;</span>', 'twentyten' ) . '</a>';
+  return ' <a href="'. get_permalink() . '">' . __( '<br>', 'twentyten' ) . '</a>';
 }
 
 /**

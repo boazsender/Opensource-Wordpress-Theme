@@ -27,6 +27,7 @@ get_header(); ?>
           <div class="entry-content">
             <span class="thumb"><?php the_post_thumbnail( 'thumbnail' ); ?></span>
             <?php the_excerpt(); ?>
+            <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
             <?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
           </div><!-- .entry-content -->
         </div><!-- #post-## -->
