@@ -50,30 +50,44 @@ get_header(); ?>
             </div>
           </div><!-- .entry-content -->
         </div><!-- #post-## -->
-        
-        <div class="panel">
-
-        <?php $loop = new WP_Query( array('posts_per_page' => 99999 ) ); ?>
-
-        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-                <div id="post-<?php the_ID(); ?>" <?php post_class('box'); ?>>
-                  <h3 class="junction"><?php the_title(); ?></h3>
-                  <div class="entry-content">
-                    <span class="thumb"><?php the_post_thumbnail( 'thumbnail' ); ?></span>
-                    <?php the_excerpt(); ?>
-                    <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
-                    <?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
-                  </div><!-- .entry-content -->
-                </div><!-- #post-## -->
-
-                <?php #comments_template( '', true ); ?>
-
-        <?php endwhile; ?>
-
-        <?php #comments_template( '', true ); ?>
-
-        <?php endwhile; ?>
+        </head>
+        <script src="<?php bloginfo( 'template_directory' ); ?>/jquery.easyslider.1.7.js"></script>
+        <script>
+          $(function(){
+            $('.posts').easySlider({
+              // continuous: true,
+              // auto: true,
+              speed: 800,
+              prevText: '&larr; Previous',
+              nextText: 'Next &rarr;',
+            });
+          })
+        </script>
+        <h1 class="fancy">From the Blog</h1>
+        <div class="posts panel">
+          <ul>
+            <?php $loop = new WP_Query( array('posts_per_page' => 4 ) ); ?>
+            
+            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+              <li>
+                    <div id="post-<?php the_ID(); ?>" <?php post_class('box'); ?>>
+                      <h3 class="junction"><?php the_title(); ?></h3>
+                      <div class="entry-content">
+                        <span class="thumb"><?php the_post_thumbnail( 'thumbnail' ); ?></span>
+                        <?php the_excerpt(); ?>
+                        <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
+                        <?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
+                      </div><!-- .entry-content -->
+                    </div><!-- #post-## -->
+            
+                    <?php #comments_template( '', true ); ?>
+              </li>
+            <?php endwhile; ?>
+            
+            <?php #comments_template( '', true ); ?>
+            
+            <?php endwhile; ?>
+          </ul>
         </div>
       </div><!-- #content -->
     </div><!-- #container -->
