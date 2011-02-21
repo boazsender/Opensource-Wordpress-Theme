@@ -17,11 +17,16 @@ get_header(); ?>
     <div id="container" class="wide">
       <div id="content" role="main">
 
+<?php
+$counter = 0;
+$loop = new WP_Query( array( 'post_type' => 'plugin', 'posts_per_page' => 99999 ) ); 
+?>
 
-<?php $loop = new WP_Query( array( 'post_type' => 'plugin', 'posts_per_page' => 99999 ) ); ?>
+<?php
+  while ( $loop->have_posts() ) : $loop->the_post(); 
+  $counter = $counter + 1;
 
-<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
+?>
         <div id="post-<?php the_ID(); ?>" <?php post_class('box'); ?>>
           <h1 class="entry-title"><?php the_title(); ?></h1>
           <div class="entry-content">
@@ -32,6 +37,12 @@ get_header(); ?>
         </div><!-- #post-## -->
 
         <?php #comments_template( '', true ); ?>
+
+<?php 
+  if ( $counter % 4 == 0 ) {
+    echo '<hr class="space">';
+  }
+?>
 
 <?php endwhile; ?>
 
