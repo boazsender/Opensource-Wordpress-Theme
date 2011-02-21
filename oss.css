@@ -438,6 +438,10 @@ input[type=text] {
   width: 325px;
   padding: 0px;
   float: right;
+  -webkit-box-shadow: rgba(0,0,0, .5) 0 0 5px;  
+     -moz-box-shadow: rgba(0,0,0, .5) 0 0 5px;  
+       -o-box-shadow: rgba(0,0,0, .5) 0 0 5px;  
+          box-shadow: rgba(0,0,0, .5) 0 0 5px;  
 }
 #twitter-container {
   height: 205px;
