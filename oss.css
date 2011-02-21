@@ -359,7 +359,7 @@ nav ul li a{
 .box{
   width: 230px;
   padding: 10px;
-  margin: 20px;
+  margin: 0 30px;
   float: left;
 }
 .attachment-thumbnail{
@@ -381,10 +381,14 @@ input[type=text] {
 
 .panel {
   background: #BE1E2D;
-  height: 350px;
+  height: 430px;
 }
 
-#video {
+.posts.panel{
+  height: 200px;
+}
+
+.home video {
   width: 550px;
   margin: 15px;
   -webkit-box-shadow: rgba(0,0,0, .5) 0 0 5px;  
@@ -438,9 +442,9 @@ input[type=text] {
 .butter-plugin{
   border: 4px solid #666;
   background-color: #FBF9EA;
-  margin: 0;
+  margin: 0 10px 0 0;
   height: 300px;
-  width: 325px;
+  width: 315px;
   padding: 0px;
   float: right;
   -webkit-box-shadow: rgba(0,0,0, .5) 0 0 5px;  
@@ -512,23 +516,24 @@ body, #content, #content input, #content textarea {
   font-family: junction;
 }
 
-/*EasySlider*/
-.carousel ul {
-  width: 950px;
-  overflow:hidden; 
-}
 
-.posts ul, .posts li{
+/*EasySlider*/
+.carousel ul, .carousel li{
   list-style:none;
   margin:0;
   padding:0;
+  overflow:hidden; 
 }
-.posts li{ 
-  width:310px;
-  height:250px;
+.carousel li{ 
+  width:950px;
+  height:340px;
 }
 span#prevBtn{}
 span#nextBtn{
   cursor: pointer;
   float: right;
+}
+
+.carousel.hentry {
+  margin-bottom: 10px;
 }

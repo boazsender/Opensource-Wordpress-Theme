@@ -39,7 +39,8 @@
       pause:      2000,
       continuous:    false, 
       numeric:     false,
-      numericId:     'controls'
+      numericId:     'controls',
+      width: '950'
     }; 
     
     var options = $.extend(defaults, options);  
@@ -50,7 +51,7 @@
       var w = $("li", obj).width(); 
       var h = $("li", obj).height(); 
       var clickable = true;
-      obj.width('950'); //was   w   change made by boaz this plugin sucks, I wish I didn't have to use it.
+      obj.width(w);
       obj.height(h); 
       obj.css("overflow","hidden");
       var ts = s-1;
