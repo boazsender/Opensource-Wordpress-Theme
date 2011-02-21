@@ -36,7 +36,8 @@ get_header(); ?>
             <video id="video" src="http://webmademovies.etherworks.ca/popcorndemo/demoscreencast.ogv" controls=""></video>
 
             <div class="sidepanel">
-            <div id="map-container" data-plugin="googlemap" class="butter-plugin"></div>
+              <div id="map-container" data-plugin="googlemap" class="butter-plugin"></div>
+            </div>
           </div><!-- .entry-content -->
         </div><!-- #post-## -->
         <h3 class="fancy">Other Demos</h3>
