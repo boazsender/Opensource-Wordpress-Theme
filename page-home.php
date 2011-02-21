@@ -50,6 +50,8 @@ get_header(); ?>
             </div>
           </div><!-- .entry-content -->
         </div><!-- #post-## -->
+        
+        <div class="panel">
 
         <?php $loop = new WP_Query( array('posts_per_page' => 99999 ) ); ?>
 
@@ -71,8 +73,8 @@ get_header(); ?>
 
         <?php #comments_template( '', true ); ?>
 
-<?php endwhile; ?>
-
+        <?php endwhile; ?>
+        </div>
       </div><!-- #content -->
     </div><!-- #container -->
 
