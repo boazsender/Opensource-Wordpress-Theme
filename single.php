@@ -28,7 +28,7 @@ if ( get_post_type() == 'Demo' ){
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
           <div class="entry-content">
-            <h1><?php the_title();?></h1>
+            <h1 class="junction"><?php the_title();?></h1>
             <?php the_content(); ?>
             <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
           </div>

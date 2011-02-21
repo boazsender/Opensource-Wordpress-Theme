@@ -83,7 +83,7 @@ get_header(); ?>
 ?>
 
         <li id="post-<?php the_ID(); ?>" <?php post_class( $terms[0]->slug ); ?>>
-          <h2><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h2>
+          <h2 class="junction"><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h2>
           <!-- <span class="fine meta">
             <?php echo get_the_term_list( $post->ID, 'types', '', ', ', '' );?> 
           </span> -->
