@@ -58,8 +58,8 @@ get_header(); ?>
                 <?php #comments_template( '', true ); ?>
 
         <?php endwhile; ?>
-
-        <?php #comments_template( '', true ); ?>
+        <hr class="space">
+        <a class="right" href="/demos">View More Demos &rarr;</a>
 
 <?php endwhile; ?>
 
