@@ -13,58 +13,42 @@
  */
 
 get_header(); ?>
+<script src="<?php bloginfo( 'template_directory' ); ?>/jquery.easyslider.1.7.js"></script>
+<script src="http://popcornjs.org/butter/popcorn-js/popcorn.js"></script>
+<script src="http://popcornjs.org/butter/popcorn-js/plugins-playback/googlemap/popcorn.googlemap.js"></script>
+<script>
+  $(function(){
+    Popcorn("#video")
+      .googlemap({"id":"googlemap","start":1,"end":8,"target":"map-container","type":"TERRAIN","zoom":12,"location":"Boston"})
+      .googlemap({"id":"googlemap","start":8,"end":16,"target":"map-container","type":"TERRAIN","zoom":12,"location":"Toronto"})
+      .googlemap({"id":"googlemap","start":16,"end":90,"target":"map-container","type":"TERRAIN","zoom":12,"location":"San francisco"})
+    
+    
+    $('.posts').easySlider({
+      speed: 800,
+      prevText: '&larr; Previous',
+      nextText: 'Next &rarr;',
+    });
+  })
+</script>
+
 
     <div id="container" class="wide">
       <div id="content" role="main">
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <div class="entry-content panel">
-            <script src="http://popcornjs.org/butter/popcorn-js/popcorn.js"></script>
-            <script src="http://popcornjs.org/butter/popcorn-js/plugins-playback/googlemap/popcorn.googlemap.js"></script>
-            <script src="http://popcornjs.org/butter/popcorn-js/plugins-playback/twitter/popcorn.twitter.js"></script>
-
+          <div id="post-<?php the_ID(); ?>" <?php post_class('demos carousel panel'); ?>>
             <video id="video" src="http://webmademovies.etherworks.ca/popcorndemo/demoscreencast.ogv" controls=""></video>
-
             <div class="sidepanel">
-            <div id="map-container" data-plugin="googlemap" class="butter-plugin"></div>
-            <div id="twitter-container" data-plugin="twitter" class="butter-plugin"></div>
-
-            <script>
-              $(function(){
-                $(function () { 
-                 var $p = Popcorn("#video")
-                   .googlemap({"id":"googlemap","start":1,"end":8,"target":"map-container","type":"TERRAIN","zoom":12,"location":"Boston"})
-                   .googlemap({"id":"googlemap","start":8,"end":16,"target":"map-container","type":"TERRAIN","zoom":12,"location":"Toronto"})
-                   .googlemap({"id":"googlemap","start":16,"end":90,"target":"map-container","type":"TERRAIN","zoom":12,"location":"San francisco"})
-                   .twitter({"id":"twitter","start":0,"end":8,"target":"twitter-container","src":"@popcornjs"})
-                   .twitter({"id":"twitter","start":8,"end":16,"target":"twitter-container","src":"@mozilla"})
-                   .twitter({"id":"twitter","start":16,"end":24,"target":"twitter-container","src":"@bocoup"})
-                   .twitter({"id":"twitter","start":24,"end":90,"target":"twitter-container","src":"@popcornjs"});
-                });
-              });
-            </script>
-
-
+              <div id="map-container" data-plugin="googlemap" class="butter-plugin"></div>
             </div>
           </div><!-- .entry-content -->
         </div><!-- #post-## -->
         </head>
-        <script src="<?php bloginfo( 'template_directory' ); ?>/jquery.easyslider.1.7.js"></script>
-        <script>
-          $(function(){
-            $('.posts').easySlider({
-              // continuous: true,
-              // auto: true,
-              speed: 800,
-              prevText: '&larr; Previous',
-              nextText: 'Next &rarr;',
-            });
-          })
-        </script>
-        <h1 class="fancy">From the Blog</h1>
-        <div class="posts panel">
+
+        <h1 class="fancy"><a href="/blog">From the Blog</a></h1>
+        <div class="posts carousel panel">
           <ul>
             <?php $loop = new WP_Query( array('posts_per_page' => 4 ) ); ?>
             
@@ -84,7 +68,6 @@ get_header(); ?>
               </li>
             <?php endwhile; ?>
             
-            <?php #comments_template( '', true ); ?>
             
             <?php endwhile; ?>
           </ul>

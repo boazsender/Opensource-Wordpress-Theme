@@ -438,8 +438,8 @@ input[type=text] {
 .butter-plugin{
   border: 4px solid #666;
   background-color: #FBF9EA;
-  margin: 0 0 10px 0;
-  height: 80px;
+  margin: 0;
+  height: 300px;
   width: 325px;
   padding: 0px;
   float: right;
@@ -447,10 +447,6 @@ input[type=text] {
      -moz-box-shadow: rgba(0,0,0, .5) 0 0 5px;  
        -o-box-shadow: rgba(0,0,0, .5) 0 0 5px;  
           box-shadow: rgba(0,0,0, .5) 0 0 5px;  
-}
-#twitter-container {
-  height: 205px;
-  overflow: hidden;
 }
 .twtr-tweets {
   margin-left: 50px;
@@ -512,7 +508,7 @@ body, #content, #content input, #content textarea {
 }
 
 /*EasySlider*/
-.posts ul {
+.carousel ul {
   width: 950px;
   overflow:hidden; 
 }
@@ -528,5 +524,6 @@ body, #content, #content input, #content textarea {
 }
 span#prevBtn{}
 span#nextBtn{
+  cursor: pointer;
   float: right;
 }
