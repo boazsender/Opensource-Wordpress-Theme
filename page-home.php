@@ -37,6 +37,15 @@ get_header(); ?>
 </script>
 
 
+    <script>
+    $(function () { 
+     var $p = Popcorn("#video")
+       .googlemap({"id":"googlemap","start":1,"end":8,"target":"map-container","type":"TERRAIN","zoom":12,"location":"Boston"})
+       .googlemap({"id":"googlemap","start":8,"end":16,"target":"map-container","type":"TERRAIN","zoom":12,"location":"Toronto"})
+       .googlemap({"id":"googlemap","start":16,"end":90,"target":"map-container","type":"TERRAIN","zoom":12,"location":"San francisco"})
+    });
+    </script>
+    
     <div id="container" class="wide">
       <div id="content" role="main">
 
