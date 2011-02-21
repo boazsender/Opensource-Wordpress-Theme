@@ -499,12 +499,17 @@ input[type=text] {
 }
 
 body, #content, #content input, #content textarea {
-  color: #000;
+  color: #222;
   text-shadow: 0 0 1px #911;
 }
 #primary {
   margin-top: 50px;
   width: 230px
+}
+
+.entry-title a, .entry-title a:hover, .entry-title a:link, .entry-title a:visited {
+  color: #911;
+  font-family: junction;
 }
 
 /*EasySlider*/
