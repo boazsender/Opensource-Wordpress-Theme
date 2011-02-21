@@ -32,7 +32,6 @@ h1.fancy {
 }
 .fancy {
   font-family: raleway;
-<<<<<<< HEAD
   color: #911 !important;
   margin: 30px 0 !important;
   
@@ -41,11 +40,6 @@ h1.fancy {
   font-family: junction;
   color: #500 !important;
   margin: 30px 0 0px 0px !important;
-=======
-  color: #888 !important;
-  margin: 30px 0 0 0!important;
->>>>>>> 8bb8ee9f808d7bf4f5bb877927656d122913ee59
-  
 }
 hr.space {
   visibility: hidden;
@@ -110,22 +104,11 @@ hr.space {
   font-size: 95px;
   margin-top: 10px;
   margin-bottom: 0px; 
-<<<<<<< HEAD
-  height:150px;
-=======
   height: 140px;
   margin-top: 10px;
->>>>>>> 8bb8ee9f808d7bf4f5bb877927656d122913ee59
   width: 100%;
   line-height: 1;
   text-indent: -9999em;
-<<<<<<< HEAD
-  background: url('img/webmademovies-org.png') no-repeat center center;  
-}
-.description #site-description {
-  display: block;  
-=======
->>>>>>> 8bb8ee9f808d7bf4f5bb877927656d122913ee59
 }
 
 .brands {
@@ -485,17 +468,10 @@ input[type=text] {
 }
 .butter-plugin{
   border: 4px solid #666;
-<<<<<<< HEAD
   background-color: #FBF9EA;
   margin: 0 10px 0 0;
   height: 300px;
   width: 315px;
-=======
-  background-color: #F4f4f4;
-  margin: 0 0 10px 0;
-  height: 300px;
-  width: 325px;
->>>>>>> 8bb8ee9f808d7bf4f5bb877927656d122913ee59
   padding: 0px;
   float: right;
   -webkit-box-shadow: rgba(0,0,0, .5) 0 0 5px;  
@@ -521,11 +497,7 @@ input[type=text] {
   color: #fff;
 }
 #access .menu-header, div.menu {
-<<<<<<< HEAD
-  width: 380px;
-=======
   width: 425px;
->>>>>>> 8bb8ee9f808d7bf4f5bb877927656d122913ee59
 }
 
 #menu-main-menu li {
@@ -535,15 +507,9 @@ input[type=text] {
 #menu-main-menu li.current-menu-item a, #menu-main-menu li a:hover{
   color: #fff;
   background: #333;
-<<<<<<< HEAD
   -webkit-box-shadow: 0px 2px 2px #811;
   -moz-box-shadow: 0px 2px 2px #811;
   -o-box-shadow: 0px 2px 2px #811;
-=======
-  -webkit-box-shadow: 0px 2px 2px #888;
-  -moz-box-shadow: 0px 2px 2px #888;
-  -o-box-shadow: 0px 2px 2px #888;
->>>>>>> 8bb8ee9f808d7bf4f5bb877927656d122913ee59
   box-shadow: 0px 2px 2px #811;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;

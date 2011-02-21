@@ -38,23 +38,13 @@
           The authoring tool for Popcorn.js
         </div>
       </div>
-<<<<<<< HEAD
       <div class="third last pushtoright">
         <p>
           Web Made Movies is a <a href="http://mozilla.com">Mozilla</a> funded project. This website is hosted by Media Temple. See a full list of the project sponsors <a href="/sponsors">here</a>.
-=======
-      <div class="half">
-        <p>
-          Popcorn.js is a <a href="http://mozilla.com">Mozilla</a> funded project. This website is hosted by Media Temple. See a full list of the project sponsors <a href="/sponsors">here</a>.
->>>>>>> 8bb8ee9f808d7bf4f5bb877927656d122913ee59
         </p>
         <footer>
           <a href="http://mozilla.com" title="The Mozilla Foundation">
-<<<<<<< HEAD
             <img class="right" height="30px"src="<?php echo bloginfo( 'template_directory' ) ?>/img/mozilla.png"> 
-=======
-            <img height="50px"src="<?php echo bloginfo( 'template_directory' ) ?>/img/mozilla.png"> 
->>>>>>> 8bb8ee9f808d7bf4f5bb877927656d122913ee59
           </a>
         </footer>
       </div>
