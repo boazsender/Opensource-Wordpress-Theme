@@ -23,7 +23,6 @@ if ( get_post_type() == 'Demo' ){
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
   $terms = wp_get_object_terms( $post->ID, 'types');
 ?>
-  
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 

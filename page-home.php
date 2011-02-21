@@ -58,7 +58,7 @@ get_header(); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
                 <div id="post-<?php the_ID(); ?>" <?php post_class('box'); ?>>
-                  <h3><?php the_title(); ?></h3>
+                  <h3 class="junction"><?php the_title(); ?></h3>
                   <div class="entry-content">
                     <span class="thumb"><?php the_post_thumbnail( 'thumbnail' ); ?></span>
                     <?php the_excerpt(); ?>

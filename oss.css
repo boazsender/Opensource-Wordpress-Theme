@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'UpperEastSideRegular';
-  src: url('fonts/ues/UpperEastSide-webfont.eot');
-  src: local('☺'), url('fonts/ues/UpperEastSide-webfont.woff') format('woff'), url('fonts/ues/UpperEastSide-webfont.ttf') format('truetype'), url('fonts/ues/UpperEastSide-webfont.svg#webfontbvu33J1z') format('svg');
+  font-family: 'junction';
+  src: url('fonts/junction/junction.eot');
+  src: local('☺'), url('fonts/junction/junction.otf') format('otf'), url('fonts/junction/junction.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,6 +34,12 @@ h1.fancy {
   font-family: raleway;
   color: #911 !important;
   margin: 30px 0 !important;
+  
+}
+.junction {
+  font-family: junction;
+  color: #500 !important;
+  margin: 30px 0 0px 0px !important;
   
 }
 hr.space {
@@ -344,7 +350,6 @@ nav ul li a{
   float: right;
 }
 #content .box h3 {
-  font-family: sans-serif;
   font-weight: normal;
   font-size: 18px;
   color: #333;
