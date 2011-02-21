@@ -176,6 +176,7 @@ hr.space {
 }
 .listitems h2 {
   font-size: 24px;
+  width: 545px;
   font-family: monospace;
   border-bottom: none;
 }
